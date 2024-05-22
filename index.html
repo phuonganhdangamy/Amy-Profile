@@ -1,0 +1,244 @@
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Dang's Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/95fd218f8f.js" crossorigin="anonymous"></script>
+</head>
+<body>    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <p class="NameLogo"><b>Amy.</b></p> -->
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo">
+                </a>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Computer Science & Data Science Undergraduate @ UofT</p>
+    
+                <h1>Hi, I am <span>Amy</span>,<br>or <span>Anh Dang Phuong</span><br>Welcome to my website!</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------------About------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- add image -->
+                    <img src="images/about-me.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <!-- add text -->
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>I am a Computer Science student planning to pursue minors in Economics and Data Science at University of Toronto, Canada. I am striving to not only be vertically specialized in technical skills but also be horizontally equipped with related Business and Data Science knowledge. It is me who always wants to self learn and explore the world, never gives up on what she is pursuing, and is eager to contribute for everyone’s higher standards in any prospects of life.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Back-end development</li>
+                                
+                            <li><span>UX/UI</span><br>Designing webs/interfaces</li>
+                                
+                            <li><span>Data Science</span><br>Data analytics</li>                                                            
+                        </ul>
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>idk</span><br>idk</li>
+                                
+                            <li><span>idk</span><br>idk</li>
+                                
+                            <li><span>idk</span><br>idk</li>                                                            
+                        </ul>
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2027</span><br>BA at University of Toronto</li>
+                                
+                            <li><span>....</span><br>...</li>
+                                
+                            <li><span>...</span><br>...</li>                                                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------projects---------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>OakSpot Pomodoro App</h2>
+                <p>My friends and I created a prototype for an app that helps improve student academic and social life for the Hack The Student Life hackathon, organized by IEEE and AWS.</p>
+                <a href="https://github.com/Chong-source/Oakspot-Pomodoro_App">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Summer Olympics Data Observation</h2>
+                <p>My group in CSC111 developed an algorithm based on the graph data structure and an interface to observe data about countries' achievements in the Summer Olympics from 1896 to 2012.</p>
+                <a href="https://github.com/ProgrammerInProgress/Project_Two_Olympics">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-r"></i>
+                <h2>Exploring SDG4 by Different Indicators</h2>
+                <p>My friends and I created an analysis for a research question on the UN's Sustainable Development Goal 4 (Quality Education) for the final project of the course STA130: An Introduction to Statistical Reasoning and Data Science.</p>
+                <a href="https://github.com/phuonganhdangamy/sdg4-exploration-stats/tree/main">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i>
+                <h2>This Personal Website!</h2>
+                <p>This is my very first time learning HTML and CSS.</p>
+                <a href="https://github.com/phuonganhdangamy/Personal-Portfolio">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------Interests-------------- -->
+<div id="interests">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies & Interests</h1>
+        <div class="hobby-list">
+            <div class="hobby">
+                <img src="images/hobby-1.png">
+                <div class="layer">
+                    <h3>Case Competitions</h3>
+                    <p>Besides CS and DS, I also enjoy solving business ideas. I used to be always imagining me being a businesswoman pursuing some business majors at university before coming to computer science. Now I wish to be a tech entrepreneur someday.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="images/hobby-2.png">
+                <div class="layer">
+                    <h3>Social Blogs</h3>
+                    <p>I love sharing my knowledge to the community and learning back from them. The passion began in 2022 when I founded Les Voyages - an online project on Facebook about learning different cultures. I am currently working on The Untold Horizons blog which shares my friend's and my undegrad journeys.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="images/hobby-3.png">
+                <div class="layer">
+                    <h3>Photography</h3>
+                    <p>Being in my high school's photography club has fostered my interest in taking pictures. Despite not being a pro, nowadays I am still practicing and going out for camara walks whenever I have time to save those precious moments in my life.</p>
+                    <a href="photo_gallery.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ------------Contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> anh.dangphuong@mail.utoronto.ca</p>
+                <p><i class="fa-solid fa-envelope"></i> phuonganhdang3008@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/phuonganhdangamy/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/phuonganhdangamy"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.facebook.com/dgphganhh/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/helloimfen/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="images/Anh-Dang-Phuong-resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made by Anh Dang Phuong <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzzFjgcW7s8copqmzVVve2cAVxOvEYXpu68E45NyIf3BB_ZzdZ3Ab8AVXIpbr0l8Q4U/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully. Thank you!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
