@@ -1,0 +1,418 @@
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy Dang's Website</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95fd218f8f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header id="header" class="w-full h-screen">
+        <nav id="main-nav" class="flex items-center justify-between flex-wrap bg-[#FFEEEE] p-4 sticky top-0 z-50">
+
+            <a href="index.html">
+                <img src="img/logo.png" class="logo">
+            </a>
+
+            <!-- Burger Icon (Hidden on large screens) -->
+            <!-- <i class="fas fa-bars text-2xl cursor-pointer lg:hidden" onclick="openmenu()"></i> -->
+            
+            <ul class="flex space-x-8">
+                <li><a href="#header" class="hover:text-[#C15B75]">Home</a></li>
+                <li><a href="#about" class="hover:text-[#C15B75]">About</a></li>
+                <li><a href="#projects" class="hover:text-[#C15B75]">Projects</a></li>
+                <li><a href="#interests" class="hover:text-[#C15B75]">Interests</a></li>
+                <li><a href="#contact" class="hover:text-[#C15B75]">Contact</a></li>
+                <!-- <i class="fas fa-times text-2xl cursor-pointer lg:hidden" onclick="closemenu()"></i> -->
+            </ul>
+        </nav>
+
+        <div class="mt-40 ml-20 text-xl">
+            <p>Computer Science & Data Science Undergraduate @ UofT</p>
+
+            <h1 class="mt-5 text-5xl leading-relaxed">
+                Hi, I am <span class="text-[#C15B75] font-bold">Amy</span>,
+                <br>or 
+                <span class="text-[#C15B75] font-bold">Anh Dang Phuong</span><br>Welcome to my website!</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+     <main class="container mx-auto p-4">
+        <!-- About Section -->
+        <div class="container mx-auto">
+            <section id="about" class="flex justify-between flex-wrap gap-8">
+                <!-- About Image -->
+                <div class="flex-1 basis-[35%]">
+                    <img class="w-full rounded-lg" src="img/about-me.jpg" alt="About Me">
+                </div>
+    
+                <!-- About Content -->
+                <div class="flex-1 basis-[60%]">
+                    <header>
+                        <h1 class="text-6xl font-semibold text-[#C15B75]">About Me</h1>
+                    </header>
+                    <p class="mt-4">
+                        I am an undergrad at University of Toronto studying Computer Science Specialist, Data Science Specialist, and Economics Minor. I am striving to not only be vertically specialized in technical skills but also be horizontally equipped with related Business and Data Science knowledge. It is me who always wants to self-learn and explore the world, never gives up on what she is pursuing, and is eager to contribute to everyone’s higher standards in any prospect of life.
+                    </p>
+
+                    <!-- Tab Navigation -->
+                    <nav class="tab-titles flex my-5 mb-10">
+                        <p onclick="opentab('skills', event)" 
+                        class="tab-links mr-12 text-lg font-medium cursor-pointer group relative">
+                         Skills
+                         <span class="absolute left-0 bottom-[-8px] h-[3px] w-0 bg-[#FFEEEE] transition-all duration-500 group-[.active-link]:w-1/2"></span>
+                     </p>
+                     <p onclick="opentab('experience', event)" 
+                        class="tab-links mr-12 text-lg font-medium cursor-pointer group relative">
+                         Experience
+                         <span class="absolute left-0 bottom-[-8px] h-[3px] w-0 bg-[#FFEEEE] transition-all duration-500 group-[.active-link]:w-1/2"></span>
+                     </p>
+                     <p onclick="opentab('education', event)" 
+                        class="tab-links mr-12 text-lg font-medium cursor-pointer group relative">
+                         Education
+                         <span class="absolute left-0 bottom-[-8px] h-[3px] w-0 bg-[#FFEEEE] transition-all duration-500 group-[.active-link]:w-1/2"></span>
+                     </p>
+                    </nav>
+                    
+                    <!-- Skills Section -->
+                    <section id="skills" class="tab-contents block">
+                        <ul class="list-none">
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">Programming</span><br>
+                                Object-Oriented Programming
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">UX/UI</span><br>
+                                Web Development
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">Data Science</span><br>
+                                Data Modeling and Analysis
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">Creative</span>
+                                <br>Marketing<br>Photography<br>Product Development
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Experience Section -->
+                    <section id="experience" class="tab-contents hidden">
+                        <ul class="list-none">
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">July 2024 - Present</span><br>
+                                Data Science Intern - SAP Vietnam
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">June 2024 - Present</span><br>
+                                E-Mentor - UC E-Mentorship Program
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">Apr 2024 - Present</span><br>
+                                Co-founder & Web Developer - The Untold Horizons
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">2022-2023</span>
+                                <br>Head of Public Relations - TDN High School Senior Students' Project
+                                <br>Advisor - Specture Photography Club
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">2021-2022</span>
+                                <br>Head of Public Relations - Specture Photography Club
+                                <br>Advisor - Specture Photography Club
+                            </li>              
+                        </ul>
+                    </section>
+                    
+                    <!-- Education Section -->
+                    <section id="education" class="tab-contents hidden">
+                        <ul class="list-none">
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">2023-2027</span><br>
+                                BA at University of Toronto @ CS, DS, Econ
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">Summer 2023</span><br>
+                                Tomorrow Marketers Academy @ Case Mastery (Frameworks and Techniques to solve business cases)
+                            </li>
+                            <li class="my-2.5">
+                                <span class="text-[#E19FAE] text-sm">2016-2023</span><br>
+                                Tran Dai Nghia High School for The Gifted @ Math Specialized
+                            </li>         
+                        </ul>
+                    </secion>
+                </div>
+            </section>
+        </div>
+
+        <div class="container mx-auto">
+            <!-- Projects Section -->
+            <section id="projects" class="py-12">
+                <div>
+                    <h1 class="text-6xl font-semibold text-[#C15B75]">My Projects</h1>
+                </div>
+
+                <!-- Projects List -->
+                <div 
+                class="projects-list grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-10 mt-12">
+                <!-- Project 1 -->
+                <div 
+                    class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                    <i class="text-4xl mb-5 block fa-brands fa-python"></i>
+                    <h2 class="text-2xl text-[#C15B75] font-medium mb-4">OakSpot Pomodoro App</h2>
+                    <p>My friends and I created a prototype for an app that helps improve student academic and social life for the Hack The Student Life hackathon, organized by IEEE and AWS.</p>
+                    <a href="https://github.com/Chong-source/Oakspot-Pomodoro_App" class="text-[#C15B75] text-xs mt-5 inline-block">Learn More</a>
+                </div>
+                <!-- Project 2 -->
+                <div 
+                    class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                    <i class="text-4xl mb-5 block fa-brands fa-python"></i>
+                    <h2 class="text-2xl text-[#C15B75] font-medium mb-4">Summer Olympics Data Observation</h2>
+                    <p>My group in CSC111 developed an algorithm based on the graph data structure and an interface to observe data about countries' achievements in the Summer Olympics from 1896 to 2012.</p>
+                    <a href="https://github.com/ProgrammerInProgress/Project_Two_Olympics" class="text-[#C15B75] text-xs mt-5 inline-block">Learn More</a>
+                </div>
+                <!-- Project 3 -->
+                <div 
+                    class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                    <i class="text-4xl mb-5 block fa-solid fa-r"></i>
+                    <h2 class="text-2xl text-[#C15B75] font-medium mb-4">Exploring SDG4 under Different Perspectives</h2>
+                    <p>Our team created an analysis for a research question on the UN's Sustainable Development Goal 4 (Quality Education) for the final project of the course STA130: An Introduction to Statistical Reasoning and Data Science.</p>
+                    <a href="https://github.com/phuonganhdangamy/sdg4-exploration-stats/tree/main" class="text-[#C15B75] text-xs mt-5 inline-block">Learn More</a>
+                </div>
+                <!-- Project 4 -->
+                <div 
+                    class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                    <i class="text-4xl mb-5 block fa-brands fa-html5"></i>
+                    <h2 class="text-2xl text-[#C15B75] font-medium mb-4">This Personal Website!</h2>
+                    <p>This is my very first time learning HTML and CSS.</p>
+                    <a href="https://github.com/phuonganhdangamy/Amy-Profile" class="text-[#C15B75] text-xs mt-5 inline-block">Learn More</a>
+                </div>
+                <!-- Project 5 -->
+                <div 
+                    class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                    <i class="text-4xl mb-5 block fa-brands fa-python"></i>
+                    <h2 class="text-2xl text-[#C15B75] font-medium mb-4">Project Title</h2>
+                    <p>Project description goes here. This is a brief summary of the project.</p>
+                    <a href="#" class="text-[#C15B75] text-xs mt-5 inline-block">Learn More</a>
+                </div>
+                <!-- Project 6 -->
+                <div 
+                    class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                    <i class="text-4xl mb-5 block fa-brands fa-java"></i>
+                    <h2 class="text-2xl text-[#C15B75] font-medium mb-4">Project Title</h2>
+                    <p>Project description goes here. This is a brief summary of the project.</p>
+                    <a href="#" class="text-[#C15B75] text-xs mt-5 inline-block">Learn More</a>
+                </div>
+            </div>
+            </section>  
+        </div>
+
+        <div class="container mx-auto">
+            <!-- Interests Section -->
+             <section id="interests" class="py-12">
+                <div>
+                    <h1 class="text-6xl font-semibold text-[#C15B75]">My Hobbies & Interests</h1>
+
+                    <div class="hobby-list grid grid-row-[repeat(auto-fit,_minmax(250px,_1fr))] gap-10 mt-12">
+                        <div 
+                        class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                            <div class="flex-1 flex flex-col justify-center p-5">
+                                <i class="text-4xl mb-4 block fa-solid fa-award text-[#C15B75]"></i>
+                                <h2 class="text-2xl font-medium mb-4 text-[#333]">Case Competitions</h2>
+                                <p class="mb-4 text-[#555]">
+                                    Besides CS and DS, I also enjoy solving business ideas. I used to imagine myself being a businesswoman pursuing business degrees before coming to computer science. Now I wish to be a tech entrepreneur someday.
+                                </p>
+                                <a href="https://github.com/ProgrammerInProgress/Project_Two_Olympics" 
+                                   class="text-[#C15B75] text-xs font-medium underline hover:text-[#9e7576] transition duration-300">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+
+                        <div 
+                        class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                            <div class="flex-1 flex flex-col justify-center p-5">
+                                <i class="text-4xl mb-4 block fa-brands fa-microblog text-[#C15B75]"></i>
+                                <h2 class="text-2xl font-medium mb-4 text-[#333]">Social Blogs</h2>
+                                <p class="mb-4 text-[#555]">
+                                    I love sharing my knowledge to the community and learning back from them. The passion began in 2022 when I founded Les Voyages - an online project on Facebook about learning different cultures. I am currently working on The Untold Horizons blog which shares my friend's and my undegrad journeys.
+                                </p>
+                                <a href="https://github.com/ProgrammerInProgress/Project_Two_Olympics" 
+                                   class="text-[#C15B75] text-xs font-medium underline hover:text-[#9e7576] transition duration-300">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+
+                        <div 
+                        class="bg-[#FFEEEE] border-2 border-gray p-10 text-sm font-light rounded-lg transition duration-500 hover:bg-[#f2cfcf] hover:-translate-y-2">
+                            <div class="flex-1 flex flex-col justify-center p-5">
+                                <i class="text-4xl mb-4 block fa-solid fa-camera-retro text-[#C15B75]"></i>
+                                <h2 class="text-2xl font-medium mb-4 text-[#333]">Photography</h2>
+                                <p class="mb-4 text-[#555]">
+                                    Being in my high school's photography club has fostered my interest in taking pictures. Despite not being a pro, nowadays I am still practicing and going out for camara walks whenever I have time to save those precious moments in my life.
+                                </p>
+                                <a href="https://github.com/ProgrammerInProgress/Project_Two_Olympics" 
+                                   class="text-[#C15B75] text-xs font-medium underline hover:text-[#9e7576] transition duration-300">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="btn block mx-auto px-12 border border-[#C15B75] rounded-lg text-[#9e7576] transition-all duration-500 hover:bg-[#FFEEEE]">See more</a>
+
+                    </div>
+             </section>
+        </div>
+
+        <div class="container mx-auto">
+            <section id="contact" class="py-12">
+                <div class="flex flex-col md:flex-row justify-between gap-8">
+                    <div class="w-full md:w-1/3">
+                        <h1 class="text-6xl font-semibold text-[#C15B75] mb-4">Contact Me</h1>
+                        <p class="flex items-center gap-4 text-[#9e7576] mb-2">
+                            <i class="fa-solid fa-envelope text-xl text-[#9e7576]"></i>
+                            anh.dangphuong@mail.utoronto.ca
+                        </p>
+                        <p class="flex items-center gap-4 text-[#9e7576] mb-4">
+                            <i class="fa-solid fa-envelope text-xl text-[#9e7576]"></i>
+                            phuonganhdang3008@gmail.com
+                        </p>
+                        <!-- Social Icons -->
+                        <div class="flex gap-4 mt-5">
+                            <a href="https://www.linkedin.com/in/phuonganhdangamy/" class="text-[#E19FAE] hover:text-[#9e7576] transition-transform transform hover:-translate-y-1">
+                                <i class="fa-brands fa-linkedin text-2xl text-[#9e7576]"></i>
+                            </a>
+                            <a href="https://github.com/phuonganhdangamy" class="text-[#E19FAE] hover:text-[#9e7576] transition-transform transform hover:-translate-y-1">
+                                <i class="fa-brands fa-square-github text-2xl text-[#9e7576]"></i>
+                            </a>
+                            <a href="https://www.facebook.com/dgphganhh/" class="text-[#E19FAE] hover:text-[#9e7576] transition-transform transform hover:-translate-y-1">
+                                <i class="fa-brands fa-square-facebook text-2xl text-[#9e7576]"></i>
+                            </a>
+                            <a href="https://www.instagram.com/helloimfen/" class="text-[#E19FAE] hover:text-[#9e7576] transition-transform transform hover:-translate-y-1">
+                                <i class="fa-brands fa-square-instagram text-2xl text-[#9e7576]"></i>
+                            </a>
+
+                        </div>
+                        <!-- Resume Button -->
+                        <button class="mt-5 btn block px-12 border border-[#C15B75] rounded-lg text-[#9e7576] transition-all duration-500 hover:bg-[#FFEEEE]">
+                            <a href="resources/AnhDangPhuong-resume.pdf" download>
+                            Download Resume
+                            </a></button>
+                    </div>
+
+                    <div class="w-full md:w-2/3">
+                        <form name="submit-to-google-sheet" class="">
+                            <input type="text" name="Name" placeholder="Your Name" required 
+                                class="w-full p-4 rounded-lg bg-[#FFEEEE] text-[#9e7576] focus:ring-2 focus:ring-[#C15B75] outline-none">
+                            <input type="email" name="Email" placeholder="Your Email" required 
+                                class="w-full p-4 mt-4 rounded-lg bg-[#FFEEEE] text-[#9e7576] focus:ring-2 focus:ring-[#C15B75] outline-none">
+                            <textarea name="Message" rows="6" placeholder="Your Message" 
+                                class="w-full p-4 mt-4 rounded-lg bg-[#FFEEEE] text-[#9e7576] focus:ring-2 focus:ring-[#C15B75] outline-none"></textarea>
+                            <button type="submit" class="mt-5 btn block px-12 border border-[#C15B75] rounded-lg text-[#9e7576] transition-all duration-500 hover:bg-[#FFEEEE]">
+                                Submit
+                            </button>
+                        </form>
+                        <!-- Message Display -->
+                        <span id="msg" class="text-[#9e7576] mt-4 block"></span>
+                    </div>
+
+                
+                </div>
+            </section>
+        </div>
+
+     </main>
+
+<footer class="bg-[#FFEEEE] text-[#C15B75] py-4 text-center">
+    <p>&copy; Made by Anh Dang Phuong <i class="fa-solid fa-heart"></i></p>
+</footer>
+
+<script>
+    const tablinks = document.querySelectorAll(".tab-links");
+const tabcontents = document.querySelectorAll(".tab-contents");
+
+function opentab(tabname, event) {
+    // Remove 'active-link' class and reset tabs
+    tablinks.forEach((tablink) => {
+        tablink.classList.remove("active-link");
+    });
+
+    tabcontents.forEach((tabcontent) => {
+        tabcontent.classList.add("hidden");
+        tabcontent.classList.remove("block");
+    });
+
+    // Add active class and display selected tab
+    event.currentTarget.classList.add("active-link");
+    const activeTab = document.getElementById(tabname);
+    activeTab.classList.remove("hidden");
+    activeTab.classList.add("block");
+}
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+
+<script>
+    function toggleAccordion(id) {
+        const content = document.getElementById(`accordion-content-${id}`);
+        const allContents = document.querySelectorAll('.accordion-item .hidden');
+        const icon = content.previousElementSibling.querySelector('.icon');
+
+        // Close all other accordions
+        allContents.forEach((el) => {
+            if (el !== content) {
+                el.classList.add('hidden');
+                el.previousElementSibling.querySelector('.icon').textContent = '+';
+            }
+        });
+
+        // Toggle selected accordion
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.textContent = '−';
+        } else {
+            content.classList.add('hidden');
+            content.style.maxHeight = null;
+            icon.textContent = '+';
+        }
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzzFjgcW7s8copqmzVVve2cAVxOvEYXpu68E45NyIf3BB_ZzdZ3Ab8AVXIpbr0l8Q4U/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully. Thank you!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
