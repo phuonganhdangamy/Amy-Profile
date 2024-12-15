@@ -34,7 +34,7 @@ body
     padding: 10px 10%;
 }
 
-/* nav
+nav
 {
     display: flex;
     width: 100%;
@@ -74,9 +74,9 @@ nav ul li a::after
 nav ul li a:hover::after
 {
     width: 100%;
-} */
+} 
 
-/* .header-text
+.header-text
 {
     margin-top: 20%;
     font-size: 30px;
@@ -92,10 +92,10 @@ nav ul li a:hover::after
 .header-text h1 span
 {
     color: #C15B75;
-} */
+}
 
 /* -----------------about------------------ */
-/* #about
+#about
 {
     padding: 80px 0;
     color: #9e7576;
@@ -175,7 +175,7 @@ nav ul li a:hover::after
 
 .tab-contents.active-tab{
     display: block;
-} */
+}
 
 /* Custom pseudo-elements for the "tab-links" */
 .tab-links.active-link::after {
@@ -183,7 +183,7 @@ nav ul li a:hover::after
 }
 
 /* -----------------projects------------------- */
-/* #projects{
+#projects{
     padding: 30px 0;
 }
 
@@ -225,7 +225,7 @@ nav ul li a:hover::after
 .projects-list div:hover{
     background: #f2cfcf;
     transform: translateY(-10px);
-} */
+}
 
 /* ------------Interests------------ */
 #interests{
