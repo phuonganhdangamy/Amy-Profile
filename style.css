@@ -65,7 +65,6 @@ nav ul li a::after
     width: 0;
     height: 3px;
     background: #C15B75;
-    /* màu cũ: #CB697F */
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -75,16 +74,7 @@ nav ul li a::after
 nav ul li a:hover::after
 {
     width: 100%;
-}
-
-.NameLogo 
-{
-    font-size: 32px;
-    color: #C15B75;
-    /* -webkit-text-stroke-color: #FFEEEE;
-    -webkit-text-stroke-width: 0.5px; */
-    margin: 10px 20px;
-}
+} 
 
 .header-text
 {
@@ -109,7 +99,6 @@ nav ul li a:hover::after
 {
     padding: 80px 0;
     color: #9e7576;
-    /* màu cũ: #B18788 */
 }
 
 .row
@@ -186,6 +175,11 @@ nav ul li a:hover::after
 
 .tab-contents.active-tab{
     display: block;
+}
+
+/* Custom pseudo-elements for the "tab-links" */
+.tab-links.active-link::after {
+    width: 50%; /* Active width */
 }
 
 /* -----------------projects------------------- */
